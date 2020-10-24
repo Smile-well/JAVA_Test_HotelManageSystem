@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fbd03cc2-b778-4818-832f-3e3f334145fd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jDZsTwUvG7SE2rwpwnEZ4GOyCW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager" selected="Application.BundleTest">
+    <configuration name="BundleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_reflect.BundleTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_reflect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_reflect.ClassTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_reflect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeathLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_thread.lock.DeathLock" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_thread.lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_contain.re_map.re_hashmap.HashMapTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_contain.re_map.re_hashmap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashSetTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_contain.re_collection.re_set.HashSetTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_contain.re_collection.re_set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IteratorTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_contain.re_iterator.IteratorTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_contain.re_iterator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertiesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_reflect.PropertiesTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_reflect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertiesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_io.mylogandproperties.PropertiesTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_io.mylogandproperties.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SleepTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_thread.re_sleep.SleepTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_thread.re_sleep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeMapTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_contain.re_map.re_treemap.TreeMapTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_contain.re_map.re_treemap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeSetTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.review.advance.re_contain.re_collection.re_set.TreeSetTest" />
+      <module name="Review" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.review.advance.re_contain.re_collection.re_set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BundleTest" />
+        <item itemvalue="Application.ClassTest" />
+        <item itemvalue="Application.PropertiesTest" />
+        <item itemvalue="Application.PropertiesTest" />
+        <item itemvalue="Application.SleepTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbd03cc2-b778-4818-832f-3e3f334145fd" name="Default Changelist" comment="" />
+      <created>1603340837214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603340837214</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="435" y="207" key="#Notifications" timestamp="1603348155733">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="435" y="207" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1603348155733" />
+    <state x="145" y="0" key="#Project_Structure" timestamp="1603340872419">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="145" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1603340872419" />
+    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603510258416">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1603510258416" />
+    <state x="424" y="184" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603526767974">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="424" y="184" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1603526767974" />
+    <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1603550075974">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1603550075974" />
+    <state x="454" y="277" width="461" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603460823572">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="454" y="277" width="461" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1603460823572" />
+    <state x="395" y="197" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1603518078944">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="395" y="197" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1366.768@0.0.1366.768" timestamp="1603518078944" />
+    <state x="382" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603529567807">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="382" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1603529567807" />
+    <state x="363" y="54" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1603549070901">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="54" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1366.768@0.0.1366.768" timestamp="1603549070901" />
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1603549299393">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1603549299393" />
+    <state width="1323" height="468" key="GridCell.Tab.0.bottom" timestamp="1603550901681">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="468" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1603550901681" />
+    <state width="1323" height="468" key="GridCell.Tab.0.center" timestamp="1603550901681">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="468" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1603550901681" />
+    <state width="1323" height="468" key="GridCell.Tab.0.left" timestamp="1603550901681">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="468" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1603550901681" />
+    <state width="1323" height="468" key="GridCell.Tab.0.right" timestamp="1603550901681">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="468" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1603550901681" />
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1603372923306">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1603372923306" />
+    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1603372923306">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1603372923306" />
+    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1603372923306">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1603372923306" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1603372923306">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1603372923306" />
+    <state x="263" y="127" key="IDE.errors.dialog" timestamp="1603513906548">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="263" y="127" key="IDE.errors.dialog/0.0.1366.768@0.0.1366.768" timestamp="1603513906548" />
+    <state x="323" y="87" key="NewModule_or_Project.wizard" timestamp="1603348305044">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="323" y="87" key="NewModule_or_Project.wizard/0.0.1366.768@0.0.1366.768" timestamp="1603348305044" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1603348316091">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1603348316091" />
+    <state x="57" y="0" key="new project wizard" timestamp="1603341008459">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="57" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1603341008459" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1603522446384">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1603522446384" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603549684710">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1603549684710" />
+  </component>
+</project>
