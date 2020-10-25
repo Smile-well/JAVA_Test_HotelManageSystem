@@ -1,0 +1,26 @@
+绝对路径：URL
+绝对路径 = 参照路径 + 相对路径
+
+相对路径：
+1） / 开头
+
+前台路径：浏览器解析执行的代码中包含的路径
+css、html、js、src中的路径、jsp中的静态部分等
+参照路径为web服务器的根路径（localhost:8080） ------查找
+
+后台路径：jsp的动态部分、xml中的路径(servlet)
+参照路径为web应用的根路径（localhost:8080/xxxx） ----标识
+
+后台路径特例：
+唯一的重定向是参照路径为当前web服务器路径
+response.sendRedirect("/xxx");
+
+response.sendRedirect("/xxx"); 没有 / ，不是特例
+
+
+
+2) 路径名称开头
+参照路径都是当前访问路径的资源路径
+资源路径 + 相对路径
+http://localhost:8080/xxxx/ + xxxx
+

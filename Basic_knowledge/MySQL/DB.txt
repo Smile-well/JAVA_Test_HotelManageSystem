@@ -1,0 +1,206 @@
+-- 在Navicat上对数据库操作 --
+
+-- 对table的操作 --
+
+-- 创建table --
+create table table_name(
+	colname_1 datetype,	--列名 数据类型
+	colname_2 datatype,
+	colname_3 datatype,
+	primary key(colname_1), --设置主码,主码唯一
+	foreign key(colname) references ohtertable_name(colname) --设置外码
+)
+
+-- 查看table结构 --
+desc table_name
+
+-- 查看DB中的所有table --
+show tables
+
+--修改table_name--
+rename table table_name to new_name
+
+--新加一列-- 
+alter table table_name add newcol_name datatype  --新列名 数据类型
+
+--修改某列的datatype--
+alter table table_name modify colname new_datatype --列名 新的数据类型
+
+--修改列名--
+alter table table_name change colname new_colname --列名和新列名可以一致 change的用处比modify广 modify只能改数据类型
+
+--删除列--
+alter table table_name drop colname
+
+--删除table--
+drop table table_name
+
+--*****************************************--
+
+-- 操作数据 --
+
+--插入数据--
+insert into table_name(colname_1,colname_2,colname_3)values (data1_1,data1_2,data1_3)
+--修改table中某列的全部数据--
+update table_name set colname=xxx
+ 
+--修改特定位置的数据--
+update table_name set colname=xxx where xxx --where后面加的是条件 
+--可以同时修改多个数据，在set后加上即可，用逗号隔开
+
+--删除部分/所有数据--
+delete from table_name where xxx
+
+delete from table_name --delete删除的数据可以复原，truncate删除的不能
+
+--******************* 查询数据 ************************--
+-- 分组        连接      筛选           排序		--
+-- group by   join on    where          order by	--
+
+
+select * from table_name --查找所有数据
+select colname_1,colname_2 from table_name --查询colname1和colname2
+select distinct colname from table_name --查询数据并过滤重复项 
+select colname_1 new_name,colname_2 new_name from table_name --查询数据用别名表示,name用名字，age用年龄等等
+
+--增加常量列和计算列
+select 'xxx',colname_1 from table_name  --常量列xxx
+select colname_1+1 from table_name	--计算列colname_1+1
+
+--查找数据的时候可以用where字句进行过滤，多个字句用and连接
+select colname from table_name where xxxx and xxx and xx --xxx是条件
+
+--可以用order by对查询结果排序
+select colname_1,colname_2 from table_name order by colname_1 desc
+--默认升序输出，后面加desc降序输出
+
+--查询统计--
+
+-- 聚合函数 --
+--count--
+select count(*) from student where xxx --统计符合条件的行数
+
+--sum--
+select sum(colname) from table_name --求和
+select sum(ifnull(colname,0)+ifnull(colname,0)+ifnull(colname,0)) from exam; --如果有一个null参与计算，整个计算的结果都是null 所以用ifnull函数把null改成0 
+
+--AVG--
+select avg(colname) from table_name --求平均值
+
+--max/min--
+select max(ifnull(colname,0)) from table_name --求最大值
+select min(ifnull(colname,0)) from table_name --求最小值
+
+
+--分组查询、统计--
+select * from table_name where xx and xx 
+select * from table_name where xx or xx 
+
+--统计emp中每个科(Sdept)中男性(Ssex='男')的总数并按科名(Sdept)升序
+select Sdept,count(*) from emp where Ssex='男' group by Sdept,Ssex order by Sdept 
+--和上面效果一样，但是用where的效率高一些
+--select Sdept,count(*) from emp group by Sdept,Ssex having Ssex='男' order by Sdept 
+
+--查询并将结果存在新表--
+select colname_1,colname_2 into new_table_name from table_name
+--如果列名中有count(*) 必须为其取别名
+
+--查询指定列用colname in
+select Sdept,count(*) from emp where Sdept in(xxx,xxxx) group by Sdept 
+--和上面效果一样 
+-- select Sdept,count(*) from emp group by Sdept having Sdept in(xxx,xxxx) 
+
+-- having的字句可以使用聚合函数，where字句不可以 --
+-- having在group之后，where在之前 --
+
+--***************************************--
+-- 多表连接查询 --
+
+
+--内连接--
+--不同表的colname要一样
+select * from table_1 join table_2 on table_1.colname=table_2.colname  --多连接一张表就要多加一个join语句,
+--select * from table_1 join table_2 on table_1.colname=table_2.colname join table_3 on table_3.colname=table_2.colname 
+
+--自连接--
+--要对同一个表取两个不同的别名
+select * from table_1 T1 join table_1 T2 on T1.colname=T2.colname
+
+--外连接--
+--左外/右外连接
+select colname_1,colname_2 from table_1 left join table_2 on xxx
+select colname_1,colname_2 from table_1 right join table_2 on xxx
+--左外连接中table_2的数据需满足条件才能输出，不满足自动用NULL填充，table_1则不需要满足条件，按原样输出
+--右外连接相反，table_1的数据不满足条件自动用NULL填充，table_1则按原样输出
+
+--top限制查询输出--
+--最好和order by一起使用
+select top n * from table_name -- 输出查询的前n，mysql不支持
+select top n percent * from table_name --输出前n%
+select top n with ties * from table_name --允许重复
+--可以改为 MySQL支持 limit--
+select * from table_name order by colname limit a,b --输出从a+1到a+b记录
+
+--分页查询--
+limit 5,10  -- 第6个开始，第十五个结束
+
+--子查询--
+--由内向外执行，先得出括号里的结果返回给where，返回值必须是单值
+
+--in连接--
+select * from table_name where colname in (select xx from xx where xxx)
+
+--比较运算符连接--
+select * from table_name where colname > (select xx from xx where xxx)
+
+--exists存在性测试--
+--带exist的子查询只返回真值和假值，不返回查询结果
+select colname from table_1
+where exists (
+	select * from table_2 where xxx
+)
+
+--case--
+--简单函数--
+select name '名字' 
+case name
+	when'xx' then 'x_x'
+	when'xxx' then 'x_x_x'
+	else 'xx'
+end 'xxx'	
+from table_name
+
+--搜索函数--
+select name,age
+case 
+	when age>n then 'xx'
+	when age<n then 'xxx'
+	when age=n then 'x'
+	end 'xxx'
+from table_name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

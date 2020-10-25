@@ -1,0 +1,137 @@
+导包：<script src="" ></script>
+
+创建vue实例
+el：挂载点
+data：数据对象
+method：方法
+
+div显示xxxxxx
+<div id="xxx">
+{{
+message									
+}}
+<div>
+<script>
+var vm=new Vue({
+	el:'#xxx',
+	data:{
+		message:"xxxxxxx"
+	}
+});
+</script>
+
+作用范围：el选中的元素及其后代
+
+其他dom元素也可以，除了html标签和body标签
+
+data也里面可以存放复杂的数据类型：对象、数组等等
+stu{
+	name:"",
+	sex:""
+},
+stu["stu1","stu2","stu3"]
+
+使用：stu.name  stu[1]
+
+
+vue指令
+v-text：标签内部里面的内容不显示
+v-html：如果是网页，则自动渲染为网页,是文本则直接输出
+v-on：响应事件
+
+
+
+<div id="xxx">
+	<h1 v-text="text"></h1>
+	<p v-html="content"></p>
+	<input type="button" value="" v-on:click="doit" />
+	<!--或者是 <input type="button" value="" @click="doit" />-->
+</div>
+
+
+var vm = new Vue({
+	el:"xxx",
+	data:{
+		xx:"",
+		text:"cccccccc",
+		content:"<a href='xxxxxxx'>xxxx</a>"
+		},
+	methods:{
+		doit:function(){
+			alter("doit");
+		}
+		change:function(){
+		this.xx-----
+		}	
+	},
+
+})
+
+计数器
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+
+
+<body>
+    <div id="app">
+        <input type="button" value="-" @click="down"></input>
+        <span v-text="number"></span>
+        <input type="button" value="+" @click="up"></input>
+    </div>
+
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                number: 0
+            },
+            methods:{
+                up:function(){
+                    if(this.number<10){
+                        this.number++;
+                    }
+                    else{
+                        alert("已经到达上限了")
+                    }
+                },
+                down:function(){
+                    if(this.number>0)
+                    this.number--;
+                    else
+                    alert("已经最少了")
+                }
+            }
+
+        })
+    </script>
+</body>
+
+<html>
+
+
+v-show：true显示 false隐藏
+修改display
+v-if：true显示 false隐藏
+修改dom元素
+
+v-bind：修改属性(src,alt....)
+v-bind:src="xxxx"
+:alt="xxxx"(只用:也可以)
+<script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                xxxx:"真实值（路径等）"
+            }
+	    })
+</script>
+
+图片切换
+数组 索引 v-bind v-on v-show

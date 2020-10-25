@@ -1,0 +1,10 @@
+IDEA通用方式
+条件：文件必须放在类路径下（src下都是）
+/*
+	Thread.currentThread() 当前线程对象
+	getContextClassLoader() 获取当前线程的类加载器对象
+	getResource("") 获取资源
+*/
+
+//获取绝对路径
+String path = Thread.currentThread().getContextClassLoader().getResource("").getPath();

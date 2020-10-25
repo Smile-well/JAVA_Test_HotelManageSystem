@@ -1,0 +1,9 @@
+<style type="text/css">
+
+body {background-color: yellow}
+padding: 20px ÄÚ±ß¾à
+body {background-image:url(/i/eg_bg_04.gif);} Í¼Æ¬±³¾°
+p {border: medium double rgb(250,0,255)} ±ß¿ò
+img {float:right} Í¼Æ¬¸¡¶¯
+
+</style>
